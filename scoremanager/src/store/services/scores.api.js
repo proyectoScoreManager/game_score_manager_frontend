@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const scoresApi = createApi({
   reducerPath: "scoresAPI", 
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3000/api/v1/", // Base URL
+    baseUrl: "http://localhost:3027/api/v1/", // Base URL
   }),
   endpoints: (builder) => ({
     // Fetch leaderboard scores

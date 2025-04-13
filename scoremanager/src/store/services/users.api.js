@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const usersApi = createApi({
   reducerPath: "usersAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3000/api/v1/", // The base URL of your API
+    baseUrl: "http://localhost:3027/api/v1/", // The base URL of your API
     prepareHeaders: (headers) => {
       const token = sessionStorage.getItem("token"); // Get the token from sessionStorage
       if (token) {
